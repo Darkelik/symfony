@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Conference Guide{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Perfetti van Melle{% endblock %}</title>
+        {% block meta %}{% endblock %}
+        {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        <header>
-            <nav>{# ... links shared by all pages ... #}</nav>
-        </header>
         {% block body %}{% endblock %}
-        <footer>&copy; {{ 'now'|date('Y') }} Conference Guide</footer>
     </body>
 </html>

@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Perfetti van Melle – Notre plateforme arrive en janvier{% endblock %}
+
+{% block meta %}
+    <meta name="robots" content="noindex">
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/perfetti.css') }}">
+{% endblock %}
+
+{% block body %}
+    <header>
+        <div class="bar">
+            <img src="https://public-data.chequemotiva.com/fr/PERFETTI/logo-original.png" alt="Perfetti van Melle">
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>© Perfetti van Melle</footer>
+{% endblock %}

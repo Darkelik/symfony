@@ -1,51 +1,27 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Perfetti van Melle – Notre plateforme arrive en janvier</title>
-    <meta name="robots" content="noindex">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/perfetti.css') }}">
-</head>
-<body>
+{% extends 'perfetti/layout.html.twig' %}
 
-<header>
-  <div class="bar">
-    <!-- Remplacez l'URL ci-dessous par celle du logo -->
-    <img src="https://public-data.chequemotiva.com/fr/PERFETTI/logo-original.png" alt="Perfetti van Melle">
-  </div>
-</header>
+{% block content %}
+    <div class="wrap">
+        <div>
+            <h1>Notre plateforme arrive en janvier.</h1>
+            <p class="lead">Encore un peu de patience&nbsp;! Vos offres de remboursement arrivent bientôt !</p>
 
-<main>
-  <div class="wrap">
-    <div>
-      <h1>Notre plateforme arrive en janvier.</h1>
-      <p class="lead">Encore un peu de patience&nbsp;! Vos offres de remboursement arrivent bientôt !</p>
-
-      <p class="sections-label">Mais également la présentations de l'ensemble de nos produits :</p>
-      <div class="sections" aria-label="Rubriques à venir">
-        <span>Nos gums</span>
-        <span>Nos bonbons et sucettes</span>
-        <span>Nos présentoirs</span>
-      </div>
-    </div>
-
-    <div class="visual" aria-hidden="true">
-      <div class="bubble">
-        <div class="month">
-          <small>Rendez-vous en</small>
-          <strong>janvier</strong>
+            <p class="sections-label">Mais également la présentation de l'ensemble de nos produits :</p>
+            <div class="sections" aria-label="Rubriques à venir">
+                <span>Nos gums</span>
+                <span>Nos bonbons et sucettes</span>
+                <span>Nos présentoirs</span>
+            </div>
         </div>
-      </div>
-      <div class="dot"></div>
+
+        <div class="visual" aria-hidden="true">
+            <div class="bubble">
+                <div class="month">
+                    <small>Rendez-vous en</small>
+                    <strong>janvier</strong>
+                </div>
+            </div>
+            <div class="dot"></div>
+        </div>
     </div>
-  </div>
-</main>
-
-<footer>© Perfetti van Melle</footer>
-
-</body>
-</html>
+{% endblock %}
